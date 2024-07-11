@@ -1,4 +1,4 @@
-using Gtk
+using Gtk,Genie
 win=GtkWindow("Sales Analysis App")
 hbox=GtkBox(:h)
 push!(win,hbox)
@@ -25,9 +25,7 @@ push!(hbox,ok)
 
 
 
-
-
-
-
-
 showall(win)
+route("/hello") do
+    "Welcome to Genie"    
+end
